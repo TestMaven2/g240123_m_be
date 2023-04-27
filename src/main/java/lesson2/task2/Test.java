@@ -15,5 +15,17 @@ public class Test {
         Bird bird = new Bird();
         bird.fly();
         bird.fly(7);
+        bird.live();
+
+        Flyable bird1 = new Bird();
+        ((Bird) bird1).live();
+
+
+        int i = 45;
+        long l = i;
+
+        int i2 = (int) l;
+
+        String s = "Hello";
     }
 }
