@@ -19,7 +19,8 @@ public class Practice {
 
         for (String word : words) {
             if (map.keySet().contains(word)) {
-                map.put(word, map.get(word) + 1);
+                Integer counter = map.get(word) + 1;
+                map.put(word, counter);
             } else {
                 map.put(word, 1);
             }
